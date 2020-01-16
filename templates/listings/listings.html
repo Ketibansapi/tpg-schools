@@ -1,0 +1,322 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">Photographies showcase</h1>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item active"> Browse</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Listings -->
+  <section id="listings" class="py-4">
+    <div class="container">
+      <div class="row">
+
+        <!-- Listing 1 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/tpg/AHS02415.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-dark text-white">$25</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">45 Drivewood Circle</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Norwood MA, 02062</p>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Photos ID: 321234</div>
+                <div class="col-6">
+                  <i class="fas fa-list"></i> Quantity: 2</div>
+              </div>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-graduation-cap"></i> School Name: Chelsea</div>
+                <div class="col-6">
+                  <i class="fas fa-check"></i> Resolution: 1240x2510</div>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-user"></i> Chelsea FC</div>
+              </div>
+              <div class="row text-secondary pb-2">
+                <div class="col-6">
+                  <i class="fas fa-clock"></i> 5 days ago</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Listing 2 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/tpg/AHS02614.JPG" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-dark text-white">$15</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">50 Woodlands Checkpoint</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Norwood MA, 02062</p>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Photos ID: 238971</div>
+                <div class="col-6">
+                  <i class="fas fa-list"></i> Quantity: 1</div>
+              </div>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-graduation-cap"></i> School Name: Liverpool</div>
+                <div class="col-6">
+                  <i class="fas fa-check"></i> Resolution: 1240x2510</div>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-user"></i> Liverpool FC</div>
+              </div>
+              <div class="row text-secondary pb-2">
+                <div class="col-6">
+                  <i class="fas fa-clock"></i> 5 days ago</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Listing 3 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/tpg/AHS02667.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-dark text-white">$30</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">187 Woodrow Street</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Salem MA, 01915</p>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Photos ID: 098532</div>
+                  <div class="col-6">
+                    <i class="fas fa-list"></i> Quantity: 2</div>
+                </div>
+                <div class="row py-2 text-secondary">
+                  <div class="col-6">
+                    <i class="fas fa-graduation-cap"></i> School Name: Spurs</div>
+                  <div class="col-6">
+                    <i class="fas fa-check"></i> Resolution: 1240x2510</div>
+                </div>
+                <hr>
+                <div class="row py-2 text-secondary">
+                  <div class="col-6">
+                    <i class="fas fa-user"></i> Spurs FC</div>
+                </div>
+                <div class="row text-secondary pb-2">
+                  <div class="col-6">
+                    <i class="fas fa-clock"></i> 5 days ago</div>
+                </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Listing 1 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/tpg/AHS02415.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-dark text-white">$25</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">45 Drivewood Circle</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Norwood MA, 02062</p>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Photos ID: 321234</div>
+                <div class="col-6">
+                  <i class="fas fa-list"></i> Quantity: 2</div>
+              </div>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-graduation-cap"></i> School Name: Chelsea</div>
+                <div class="col-6">
+                  <i class="fas fa-check"></i> Resolution: 1240x2510</div>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-user"></i> Chelsea FC</div>
+              </div>
+              <div class="row text-secondary pb-2">
+                <div class="col-6">
+                  <i class="fas fa-clock"></i> 5 days ago</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Listing 2 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/tpg/AHS02614.JPG" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-dark text-white">$15</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">50 Woodlands Checkpoint</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Norwood MA, 02062</p>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Photos ID: 238971</div>
+                <div class="col-6">
+                  <i class="fas fa-list"></i> Quantity: 1</div>
+              </div>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-graduation-cap"></i> School Name: Liverpool</div>
+                <div class="col-6">
+                  <i class="fas fa-check"></i> Resolution: 1240x2510</div>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-user"></i> Liverpool FC</div>
+              </div>
+              <div class="row text-secondary pb-2">
+                <div class="col-6">
+                  <i class="fas fa-clock"></i> 5 days ago</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Listing 3 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/tpg/AHS02667.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-dark text-white">$30</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">187 Woodrow Street</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Salem MA, 01915</p>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Photos ID: 098532</div>
+                  <div class="col-6">
+                    <i class="fas fa-list"></i> Quantity: 2</div>
+                </div>
+                <div class="row py-2 text-secondary">
+                  <div class="col-6">
+                    <i class="fas fa-graduation-cap"></i> School Name: Spurs</div>
+                  <div class="col-6">
+                    <i class="fas fa-check"></i> Resolution: 1240x2510</div>
+                </div>
+                <hr>
+                <div class="row py-2 text-secondary">
+                  <div class="col-6">
+                    <i class="fas fa-user"></i> Spurs FC</div>
+                </div>
+                <div class="row text-secondary pb-2">
+                  <div class="col-6">
+                    <i class="fas fa-clock"></i> 5 days ago</div>
+                </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="pagination">
+            <li class="page-item disabled">
+              <a class="page-link" href="#">&laquo;</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">&raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

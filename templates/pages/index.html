@@ -1,3 +1,230 @@
-{% extends 'base.html' %} {% block content %}
-<h1>home</h1>
+{% extends 'base.html' %} 
+{% block content %}
+<!-- Showcase -->
+<section id="showcase">
+    <div class="container text-center">
+      <div class="home-search p-5">
+        <div class="overlay p-5">
+          <h1 class="display-4 mb-4">
+            Find your alumni photos here!
+          </h1>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quas, asperiores eveniet vel nostrum magnam
+            voluptatum tempore! Consectetur, id commodi!</p>
+          <div class="search">
+            <form action="search.html">
+              <!-- Form Row 1 -->
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">Keywords</label>
+                  <input type="text" name="keywords" class="form-control" placeholder="Photos ID (example: 221203)">
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">School</label>
+                  <input type="text" name="school" class="form-control" placeholder="School name">
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">Country</label>
+                  <select name="country" class="form-control">
+                    <option selected="true" disabled="disabled">Country</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="SG">Singapore</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Form Row 2 -->
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label class="sr-only">Quantity</label>
+                  <select name="quantity" class="form-control">
+                    <option selected="true" disabled="disabled">Quantity</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <select name="price" class="form-control" id="type">
+                    <option selected="true" disabled="disabled">Max price (any)</option>
+                    <option value="15">$15</option>
+                    <option value="20">$20</option>
+                    <option value="25">$25</option>
+                    <option value="30">$30</option>
+                  </select>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-block mt-4" type="submit">Find Photos</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Listings -->
+  <section id="listings" class="py-5">
+    <div class="container">
+      <h3 class="text-center mb-3">Latest photos with TPG!</h3>
+      <div class="row">
+        <!-- Listing 1 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/tpg/AHS02415.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-dark text-white">$25</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">45 Drivewood Circle</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Norwood MA, 02062</p>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Photos ID: 321234</div>
+                <div class="col-6">
+                  <i class="fas fa-list"></i> Quantity: 2</div>
+              </div>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-graduation-cap"></i> School Name: Chelsea</div>
+                <div class="col-6">
+                  <i class="fas fa-check"></i> Resolution: 1240x2510</div>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-user"></i> Chelsea FC</div>
+              </div>
+              <div class="row text-secondary pb-2">
+                <div class="col-6">
+                  <i class="fas fa-clock"></i> 5 days ago</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Listing 2 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/tpg/AHS02614.JPG" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-dark text-white">$15</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">50 Woodlands Checkpoint</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Norwood MA, 02062</p>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Photos ID: 238971</div>
+                <div class="col-6">
+                  <i class="fas fa-list"></i> Quantity: 1</div>
+              </div>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-graduation-cap"></i> School Name: Liverpool</div>
+                <div class="col-6">
+                  <i class="fas fa-check"></i> Resolution: 1240x2510</div>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-user"></i> Liverpool FC</div>
+              </div>
+              <div class="row text-secondary pb-2">
+                <div class="col-6">
+                  <i class="fas fa-clock"></i> 5 days ago</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Listing 3 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/tpg/AHS02667.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-dark text-white">$30</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">187 Woodrow Street</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Salem MA, 01915</p>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Photos ID: 098532</div>
+                  <div class="col-6">
+                    <i class="fas fa-list"></i> Quantity: 2</div>
+                </div>
+                <div class="row py-2 text-secondary">
+                  <div class="col-6">
+                    <i class="fas fa-graduation-cap"></i> School Name: Spurs</div>
+                  <div class="col-6">
+                    <i class="fas fa-check"></i> Resolution: 1240x2510</div>
+                </div>
+                <hr>
+                <div class="row py-2 text-secondary">
+                  <div class="col-6">
+                    <i class="fas fa-user"></i> Spurs FC</div>
+                </div>
+                <div class="row text-secondary pb-2">
+                  <div class="col-6">
+                    <i class="fas fa-clock"></i> 5 days ago</div>
+                </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-5 bg- text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <i class="fas fa-comment fa-4x mr-4"></i>
+          <hr>
+          <h3>Best consult services</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-camera fa-4x mr-4"></i>
+          <hr>
+          <h3>Photography qualities</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-smile fa-4x mr-4"></i>
+          <hr>
+          <h3>Easy to purchase</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}
